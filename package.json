@@ -1,0 +1,14 @@
+{
+  "name": "RubyAddress",
+  "private": false,
+  "dependencies": {
+    "@rails/actioncable": "^6.0.0",
+    "@rails/activestorage": "^6.0.0",
+    "@rails/ujs": "^6.0.0",
+    "turbolinks": "^5.2.0"
+  },
+  "version": "0.1.0",
+  "main": "index.js",
+  "author": "Lene Lefiti <47546203+LenLen684@users.noreply.github.com>",
+  "license": "MIT"
+}
