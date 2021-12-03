@@ -1,6 +1,6 @@
 class AddressesController < ApplicationController
     def index
-        @addresses = Address.all
+        @addresses = Address.all.sort_by { |a| a.name}
     end
 
     def new
