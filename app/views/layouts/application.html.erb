@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RubyAddress</title>
+    <title>RubyAddress <%=
+      if(@title) 
+        "| "+@title 
+      end
+    %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,6 +15,12 @@
   </head>
 
   <body>
+    <nav>
+      <ul>
+        <li><%=  link_to "Home", home_path%></li>
+        <li><%=  link_to "Add Address", new_address_path%></li>
+      </ul>
+    </nav>
     <%= yield %>
   </body>
 </html>
