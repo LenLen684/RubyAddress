@@ -16,11 +16,11 @@
 
   <body>
     <nav>
-      <ul>
-        <li><%=  link_to "Home", home_path%></li>
-        <li><%=  link_to "Add Address", new_address_path%></li>
-      </ul>
+      <%=  link_to "Home", home_path, :class => 'tabs' %>
+      <%=  link_to "Add Address", new_address_path, :class => 'tabs' %>
     </nav>
-    <%= yield %>
+    <main>
+      <%= yield %>
+    </main>
   </body>
 </html>
