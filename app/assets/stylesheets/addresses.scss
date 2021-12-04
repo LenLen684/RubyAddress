@@ -1,3 +1,97 @@
 // Place all the styles related to the Addresses controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Montserrat&display=swap');
+body{
+    margin: 0;
+    background-color:  	#435274;
+    color: #d5dfe7;
+    font-family: "Comfortaa", sans-serif;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main{
+    width: 80%;
+}
+
+.address{
+    background-color: #2b3c57;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 5px 5px 10px 5px;
+    
+    h3{
+        margin: 0px;
+    }
+}
+
+.btn{
+    color: #ffffff;
+    height: 20vh;
+    width: auto;
+    margin-top: 10%;
+    background-color: #d1d1d188;
+    border-radius: 4px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 2vmax;
+    color:#d2e0e0;
+    padding: 4px;
+}
+
+/* Nav Items */
+
+nav{
+    display: flex;
+    width: 100%;
+    max-height: 13%;
+    min-height: 60px;
+    background-color: #d1d1d188;
+    overflow: hidden;
+}
+
+.tabs{
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    color: #2b3236;
+    font-size: 1.9vmax;
+    transition: all ease-in-out 500ms;
+}
+
+.tabs:hover{
+    background-color:#435274;
+    color: #d5dfe7;
+}
+
+/* Form stuff */
+
+input[type=text], textarea, input[type=password], input[type=date]{
+    margin-bottom:20px;
+    border-radius:5px;
+    background:#F6F7F9;
+    border:none;
+    width:100%;
+    line-height:40px;
+    outline:none;
+    font-size: 1.5vmax;
+}
+ 
+input[type=submit]:not(.link){
+    background:#00000073;
+    color:#F6F7F9;
+    height:40px;
+    line-height:40px;
+    width:100%;
+    border:none;
+    border-radius:4px;
+    font-weight:700;
+}

@@ -1,6 +1,6 @@
 <h1><%= @title%></h1>
-<p>Address: <%= @address.address%></p>
-<p>Email: <%= @address.email%></p>
-<p>Phone: <%= @address.phone%></p>
+<p>Address:<br> <%= @address.address%></p>
+<p>Email:<br> <%= @address.email%></p>
+<p>Phone:<br> <%= @address.phone%></p>
 <%=  link_to "Edit", edit_address_path(@address), :class=> "btn" %>
 <%=  link_to "Delete", address_path(@address), method: :delete, :class=> "btn" %>

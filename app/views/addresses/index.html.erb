@@ -1,8 +1,8 @@
 <h1>Addresses</h1>
 <% @addresses.each do |address| %>
     <div class="address" >
-        <%= address.name%><br>
-        <%= address.address%><br>
+        <h3> <%= address.name%> </h3>
+        <p>Address:<br> <%= address.address%> </p>
         <%= link_to "See whole address", address_path(address), :class => 'btn' %>
     </div>
 <% end %>
