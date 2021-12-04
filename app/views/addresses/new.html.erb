@@ -1,0 +1,21 @@
+<h1><%=@title %></h1>
+<%= form_for :address, url: addresses_path do |f| %>
+    <% if @address.errors.any? %>
+        <% @address.errors.full_messages.each do |err| %>
+            <div class="alert"><%=err%></div>
+        <% end %>
+    <% end %>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %><br>
+    
+    <%= f.label :address %><br>
+    <%= f.text_area :address %><br>
+    
+    <%= f.label :email %><br>
+    <%= f.text_field :email %><br>
+    
+    <%= f.label :phone %><br>
+    <%= f.text_field :phone %><br>
+    
+    <%= f.submit "Add new Address" %><br>
+<% end %>
